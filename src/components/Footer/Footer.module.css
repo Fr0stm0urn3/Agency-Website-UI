@@ -1,0 +1,187 @@
+.container {
+  width: 95vw;
+  margin: 120px auto 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.topContent {
+  display: flex;
+  gap: 20px;
+}
+
+.topContentRight {
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  padding: 45px 10px 30px;
+  width: 70%;
+  background-color: #1f1f1f;
+  border-radius: 10px;
+}
+
+.topContentRight .listOne,
+.topContentRight .listTwo {
+  display: flex;
+  justify-content: space-around;
+  width: 48%;
+}
+
+.topContentRight .list ul {
+  margin-top: 30px;
+  list-style: none;
+  line-height: 40px;
+}
+
+.topContentRight h3 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.topContentRight .list ul li {
+  font-size: 17px;
+  font-weight: 500;
+  color: rgb(171, 171, 171);
+  cursor: pointer;
+}
+
+.topContentRight .list ul li span {
+  background-color: #1f1f1f;
+  border-radius: 6px;
+  padding: 6px 14px;
+  color: rgb(230, 228, 228);
+  font-size: 13px;
+}
+
+.bottomContent {
+  display: flex;
+  gap: 20px;
+}
+
+.bottomContentRight {
+  height: 300px;
+  padding: 30px;
+  background-color: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  width: 70%;
+}
+
+.bottomContentRight .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottomContentRight .header h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(150, 150, 150);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.bottomContentRight .header h2 {
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.bottomContentRight .header .headerBottom {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.bottomContentRight .header .headerBottom input {
+  height: 40px;
+  border: 1px solid rgb(52, 52, 52);
+  outline: none;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  padding: 8px 10px;
+}
+
+.bottomContentRight .header .headerBottom > * {
+  user-select: none;
+}
+
+.bottomContentRight .rights {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(150, 150, 150);
+}
+
+/* @media screen and (max-width: 1460px) {
+  .container {
+    min-width: 100vw;
+    margin: 120px auto 80px;
+  }
+
+  .topContent {
+    justify-content: space-between;
+  }
+} */
+
+.footerCards {
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    padding: 0 5%;
+  }
+
+  .topContent {
+    flex-direction: column;
+  }
+
+  .bottomContent .bottomContentRight {
+    width: 100%;
+    text-align: center;
+    line-height: 70px;
+    height: 400px;
+  }
+
+  .topContentRight {
+    text-align: center;
+    height: 600px;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  .topContentRight .listOne,
+  .topContentRight .listTwo {
+    flex-direction: column;
+    justify-content: start;
+    gap: 80px;
+  }
+
+  .bottomContent {
+    flex-direction: column;
+  }
+
+  .bottomContent .bottomContentRight .header {
+    flex-direction: column;
+  }
+  .bottomContent .bottomContentRight .header div:first-child {
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+  .bottomContent .bottomContentRight .rights {
+    flex-direction: column;
+  }
+
+  .footerCards {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

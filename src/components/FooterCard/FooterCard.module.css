@@ -1,0 +1,26 @@
+.footerCard {
+  background-color: #1f1f1f;
+  padding: 30px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  height: 300px;
+}
+
+.footerCard .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.footerCard h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: whitesmoke;
+  margin-bottom: 20px;
+}
+
+.footerCard p {
+  color: rgb(170, 170, 170);
+  max-width: 360px;
+}
