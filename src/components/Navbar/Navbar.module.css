@@ -1,0 +1,105 @@
+.container {
+  width: 100vw;
+  margin: 0 auto;
+  padding: 30px 5%;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+  list-style: none;
+}
+
+.navbar ul li {
+  background-color: rgb(34, 34, 34);
+  padding: 12px 20px;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  user-select: none;
+  outline: none;
+  transition: 0.2s linear;
+}
+
+.navbar ul li:hover {
+  background-color: rgba(38, 38, 38, 0.7);
+  transform: scale(105%);
+}
+
+.link {
+  text-decoration: none;
+  color: gray;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.active {
+  color: rgb(255, 111, 0);
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.navbar ul li:last-child {
+  background-color: rgb(232, 100, 0);
+  padding: 16px 24px;
+  border: none;
+  border-radius: 10px;
+  user-select: none;
+  outline: none;
+  transition: 0.2s linear;
+}
+
+.contact {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.contactActive {
+  color: gold;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.bars {
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  top: 65%;
+  right: 8%;
+  background-color: rgb(204, 84, 41);
+  padding: 20px 40px;
+  font-weight: 500;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+  gap: 10px;
+}
+
+@media screen and (max-width: 1320px) {
+  .container .navbar ul {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1321px) {
+  .bars {
+    display: none;
+  }
+}
