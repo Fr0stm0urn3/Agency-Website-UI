@@ -1,4 +1,4 @@
-import followImg from "../../assets/images/Button (1).png"
+import followImg from "../../../assets/images/Button (1).png"
 import styles from "./FooterCard.module.css"
 
 const FooterCard = ({ img, children, title }) => {

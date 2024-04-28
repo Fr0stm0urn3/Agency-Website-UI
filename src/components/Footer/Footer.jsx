@@ -3,12 +3,14 @@ import icon1 from "../../assets/images/Icon Container.png"
 import icon2 from "../../assets/images/Icon Container (1).png"
 import icon3 from "../../assets/images/Icon Container (2).png"
 import icon4 from "../../assets/images/Icon Container (3).png"
-import FooterCard from "../FooterCard/FooterCard"
+import FooterCard from "./FooterCard/FooterCard"
 import arrowLogo from "../../assets/images/Button (1).png"
+import FooterHeader from "./FooterHeader/FooterHeader"
 
 const Footer = () => {
   return (
     <footer className={styles.container}>
+      <FooterHeader />
       <div className={styles.content}>
         <div className={styles.topContent}>
           <div className={styles.footerCards}>
