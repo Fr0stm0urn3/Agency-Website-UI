@@ -1,0 +1,169 @@
+.container {
+  max-width: 95vw;
+  margin: 100px auto;
+}
+
+/* .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+} */
+
+.content .topContent {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.topContent .topLeftContent {
+  padding: 40px;
+  background-color: rgb(68, 68, 68);
+  color: white;
+  border-radius: 20px;
+  width: 70%;
+}
+
+.topLeftContent h1 {
+  font-size: 62px;
+  font-weight: 900;
+  max-width: 700px;
+  line-height: 70px;
+  text-transform: uppercase;
+}
+
+.topLeftContent p {
+  color: gray;
+  font-size: 20px;
+  max-width: 900px;
+  margin: 80px 0 170px;
+}
+
+.topLeftContent .about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.topLeftContent .about .orangeCircle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: orangered;
+}
+
+.topLeftContent .text {
+  color: gray;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.topRightContent {
+  background-color: rgb(88, 88, 88);
+  border-radius: 20px;
+  padding: 0 0 20px;
+  width: auto;
+}
+
+.heroImg {
+  position: relative;
+}
+
+.heroImg img:last-child {
+  width: 100%;
+  object-fit: cover;
+}
+
+.heroImg img:first-child {
+  width: 23.5%;
+  object-fit: cover;
+  position: absolute;
+  top: 0.5%;
+  right: 0.5%;
+}
+
+.topRightContent h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 10px 0 20px;
+  padding-left: 15px;
+}
+
+.topRightContent div:last-child {
+  color: gray;
+  padding-left: 15px;
+}
+
+.boxes {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.box {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.box h4 {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.box h3 {
+  font-size: 45px;
+  font-weight: 700;
+  color: rgb(212, 109, 29);
+}
+
+.more {
+  flex-direction: row;
+  align-items: center;
+}
+
+.more * {
+  cursor: pointer;
+}
+
+.more img {
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 1840px) {
+  .topLeftContent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .topLeftContent h1,
+  .topLeftContent p {
+    min-width: 100%;
+  }
+
+  .topContent .topRightContent {
+    display: none;
+  }
+
+  .about {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .boxes {
+    flex-wrap: wrap;
+  }
+}
