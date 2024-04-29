@@ -1,0 +1,124 @@
+.container {
+  width: 95vw;
+  margin: 120px auto 0;
+}
+
+.contentHeader {
+  background-color: #292929;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.contentHeader h3 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.contentHeader button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 3px 22px 3px 14px;
+  background-color: black;
+  color: whitesmoke;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 14px;
+  font-weight: 600;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.contentHeader button img {
+  margin-top: 6px;
+}
+
+.contentHeader button:hover {
+  background-color: white;
+  color: black;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.testimonial {
+  background-color: #292929;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 18px;
+}
+
+.testimonial h5 {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.testimonial p {
+  color: gray;
+}
+
+.testimonialProfile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testimonialProfile .profileInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.testimonialProfile .profileInfo div h6 {
+  font-size: 17px;
+  margin-bottom: 7px;
+}
+
+.testimonialProfile .profileInfo div div {
+  color: gray;
+}
+
+.testimonialProfile img:last-child {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.testimonialProfile img:last-child:hover {
+  transform: scale(108%);
+}
+
+@media screen and (max-width: 1500px) {
+  .testimonials {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .testimonial {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .testimonials {
+    flex-direction: column;
+  }
+
+  .testimonial {
+    width: 100%;
+    text-align: center;
+  }
+}
