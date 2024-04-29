@@ -1,0 +1,161 @@
+.container {
+  min-width: 100%;
+  padding: 0 3%;
+  margin: 100px auto -30px;
+}
+
+.container .header {
+  background-color: #292929;
+  padding: 30px 40px;
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .header h3 {
+  font-weight: 700;
+  font-size: 34px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container .header button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 30px 2px 15px;
+  background-color: black;
+  border: none;
+  color: whitesmoke;
+  font-size: 15px;
+  text-transform: uppercase;
+  border-radius: 14px;
+  gap: 10px;
+  cursor: pointer;
+  outline: none;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+
+.container .header button:hover {
+  background-color: whitesmoke;
+  color: black;
+  box-shadow: 2px 2px 4px rgba(137, 2, 137, 0.7);
+}
+
+.container .header button img {
+  margin-top: 5px;
+  width: 50px;
+}
+
+.faqContainer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.faqs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 60%;
+}
+
+.faqs .faq {
+  background-color: #292929;
+  padding: 30px 40px;
+  border-radius: 10px;
+}
+
+.faqs .faq .faqHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.faqs .faq .faqHeader h5 {
+  font-size: 16px;
+}
+
+.faqs .faq .faqHeader button {
+  background-color: orangered;
+  color: black;
+  align-self: center;
+  padding: 5px 6px;
+  border-radius: 50%;
+}
+
+.faqs .faq p {
+  color: gray;
+}
+
+.formContainer {
+  background-color: #292929;
+  padding: 30px 40px;
+  border-radius: 20px;
+  width: 40%;
+}
+
+.formContainer form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formContainer h4 {
+  font-size: 23px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.formContainer form label {
+  font-size: 18px;
+  color: whitesmoke;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.formContainer form input,
+.formContainer form textarea {
+  background-color: black;
+  border: none;
+  outline: none;
+  padding: 20px 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.formContainer form button {
+  margin-top: 20px;
+  background-color: rgb(217, 120, 84);
+  padding: 17px;
+  border-radius: 16px;
+  font-weight: 600;
+  color: black;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 880px) {
+  .header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .faqContainer {
+    flex-direction: column;
+  }
+
+  .faqContainer .faqs {
+    width: 100%;
+  }
+
+  .faqContainer .formContainer {
+    width: 100%;
+  }
+}

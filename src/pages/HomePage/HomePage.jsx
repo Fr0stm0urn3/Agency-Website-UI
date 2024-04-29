@@ -1,5 +1,12 @@
+import FAQ from "../../components/FAQ/FAQ"
+
 const HomePage = () => {
-  return <div>HomePage</div>
+  return (
+    <>
+      HomePage
+      <FAQ />
+    </>
+  )
 }
 
 export default HomePage
